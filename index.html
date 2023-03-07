@@ -223,6 +223,13 @@ nav ul li.btn.hide i:before{
   display: none;
   background: rgba(0,0,0,0.45);
 }
+ .logo-img{
+  margin-right: auto;
+  width: 18%;
+  margin-left: -80px;
+  margin-bottom: -20px;
+  margin-top: -20px;
+}
 
 @media(max-width: 1000px){
   .gallery .image{
@@ -230,14 +237,16 @@ nav ul li.btn.hide i:before{
   }
 }
 @media all and (max-width: 1024px){
+    .logo-img{
+  margin-right:auto;
+  margin-left:-30px;
+  width: 110px;
+  display: block;
+}
   .gallery .image{
     width: 100%;
     padding: 4px;
   }
-  .logo-img{
-      height=57px;
-      width=57px;
-    }
   nav{
     padding: 5px 10px;
  
@@ -270,8 +279,8 @@ nav ul li.btn.hide i:before{
   <div class="wrapper">
     <nav>
       <ul>
-        <img class="logo-img" src="bg.png" width="65" height="65" alt="Logo" Align="margin-top" >
-         <li class="logo">Gallery</li>
+         <img class="logo-img" src="bg.png">
+       <li class="logo">Gallery</li>
          <li class="items"><a href="https://stebinsteelengineering.github.io/.com/">Home</a></li>
          <li class="items"><a href="https://stebinsteelengineering.github.io/AboutUs/">About</a></li>
          <li class="items"><a href="#">Gallery</a></li>
