@@ -9,11 +9,11 @@
  <i class="fa fa-picture-o" aria-hidden="true"></i>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Allerta Stencil');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 ::selection{
   color: #fff;
@@ -90,12 +90,13 @@ nav li.forward a:hover:before{
 }
 nav ul li.logo{
   flex: 1;
-  color: white;
+ color: white;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 900;
+  font-family: 'Allerta Stencil';
   cursor: default;
   user-select: none;
-  margin-left: 35px;
+   margin-left: -55px;
 }
 nav ul li a{
   color: white;
@@ -222,6 +223,13 @@ nav ul li.btn.hide i:before{
   display: none;
   background: rgba(0,0,0,0.45);
 }
+.logo-img{
+  margin-right: auto;
+  width: 18%;
+  margin-left: -80px;
+  margin-bottom: -20px;
+  margin-top: -20px;
+}
 
 @media(max-width: 1000px){
   .gallery .image{
@@ -234,17 +242,20 @@ nav ul li.btn.hide i:before{
     padding: 4px;
   }
   .logo-img{
-      height=57px;
-      width=57px;
-    }
+  margin-right:auto;
+  margin-left:-30px;
+  width: 110px;
+  display: block;
+}
   nav{
     padding: 5px 10px;
  
   }
-  nav ul li.logo{
-    font-size: 20px;
-    margin-left: 0px;
-  }
+ nav ul li.logo{
+  font-size: 23px;
+  margin-left: 2px;
+  font-family: 'Allerta Stencil';
+}
   nav ul li.items{
     width: 100%;
     display: none;
@@ -272,7 +283,7 @@ nav ul li.btn.hide i:before{
   <div class="wrapper">
     <nav>
       <ul>
-        <img class="logo-img" src="logo.jpeg" width="65" height="65" alt="Logo" Align="margin-top" >
+       <img class="logo-img" src="bg.png">
             <li class="logo">Gallery</li>
         <li class="items"><a href="https://stebinsteelengineering.github.io/.com/">Home</a></li>
          <li class="items"><a href="https://stebinsteelengineering.github.io/AboutUs/">About</a></li>
