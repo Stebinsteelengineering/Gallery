@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-     <link rel="shortcut icon" type="image/png" href="pictures.png">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
  <i class="fa fa-picture-o" aria-hidden="true"></i>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-      @import url('https://fonts.googleapis.com/css?family=Allerta Stencil');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 ::selection{
   color: #fff;
@@ -96,7 +95,7 @@ nav ul li.logo{
   font-weight: 600;
   cursor: default;
   user-select: none;
-  margin-left: 20px;
+  margin-left: 35px;
 }
 nav ul li a{
   color: white;
@@ -223,50 +222,29 @@ nav ul li.btn.hide i:before{
   display: none;
   background: rgba(0,0,0,0.45);
 }
-.logo-img{
-  margin-right: auto;
-  width: 18%;
-  margin-left: -80px;
-  margin-bottom: -20px;
-  margin-top: -20px;
-}
 
 @media(max-width: 1000px){
-  nav ul li.logo{
-  font-size: 23px;
-  margin-left: 2px;
-}
-      .logo-img{
-  margin-right:auto;
-  margin-left:-30px;
-  width: 110px;
-  display: block;
-}
-  
   .gallery .image{
     width: calc(100% / 2);
   }
 }
-@media all and (max-width: 1024px){
-  
-      .logo-img{
-  margin-right:auto;
-  margin-left:-30px;
-  width: 110px;
-  display: block;
-}
+@media all and (max-width: 900px){
   .gallery .image{
     width: 100%;
     padding: 4px;
   }
+  .logo-img{
+      height=57px;
+      width=57px;
+    }
   nav{
     padding: 5px 10px;
  
   }
- nav ul li.logo{
-  font-size: 23px;
-  margin-left: 2px;
-}
+  nav ul li.logo{
+    font-size: 20px;
+    margin-left: 0px;
+  }
   nav ul li.items{
     width: 100%;
     display: none;
@@ -284,6 +262,9 @@ nav ul li.btn.hide i:before{
                 inset 0 0 10px #66ffff;
     
   }
+  nav ul li.items:hover:after{
+    opacity: 0px;
+  }
 }
 </style>
   </head>
@@ -291,25 +272,25 @@ nav ul li.btn.hide i:before{
   <div class="wrapper">
     <nav>
       <ul>
-         <img class="logo-img" src="bg.png">
-       <li class="logo">Gallery</li>
-         <li class="items"><a href="https://stebinsteelengineering.github.io/.com/">Home</a></li>
-         <li class="items"><a href="https://stebinsteelengineering.github.io/AboutUs/">About</a></li>
+        <img class="logo-img" src="logo.jpeg" width="65" height="65" alt="Logo" Align="margin-top" >
+         <li class="logo">Gallery</li>
+         <li class="items"><a href="https://stebinsabu.github.io/.com/">Home</a></li>
+         <li class="items"><a href="">About</a></li>
          <li class="items"><a href="#">Gallery</a></li>
-         <li class="items"><a href="https://stebinsteelengineering.github.io/Contact/">Contact</a></li>
+         <li class="items"><a href="https://stebinsabu.github.io/contact/">Contact</a></li>
          <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
       </ul>
    </nav>
     <div class="gallery">
-      <div class="image"><span><img src="istockphoto-1313302281-612x612.jpg" alt=""></span></div>
       <div class="image"><span><img src="grinding.jpeg" alt=""></span></div>
       <div class="image"><span><img src="grinding.jpeg" alt=""></span></div>
       <div class="image"><span><img src="grinding.jpeg" alt=""></span></div>
       <div class="image"><span><img src="grinding.jpeg" alt=""></span></div>
-      <div class="image"><span><img src="istockphoto-505771152-612x612.jpg" alt=""></span></div>
-      <div class="image"><span><img src="less smoke.jpeg" alt=""></span></div>
-      <div class="image"><span><img src="black welding.jpeg" alt=""></span></div>
-      <div class="image"><span><img src="cutting.jpeg" alt=""></span></div>
+      <div class="image"><span><img src="grinding.jpeg" alt=""></span></div>
+      <div class="image"><span><img src="grinding.jpeg" alt=""></span></div>
+      <div class="image"><span><img src="grinding.jpeg" alt=""></span></div>
+      <div class="image"><span><img src="grinding.jpeg" alt=""></span></div>
+      <div class="image"><span><img src="grinding.jpeg" alt=""></span></div>
     </div>
   </div>
   <div class="preview-box">
