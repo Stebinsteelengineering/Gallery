@@ -339,13 +339,13 @@ window.onload = ()=>{
         let clickedImgIndex; //creating new variable
         
         gallery[i].onclick = () =>{
-            clickedImgIndex = i; //passing cliked image index to created variable (clickedImgIndex)
+            clickedImgIndex = i; //passing clicked image index to the created variable (clickedImgIndex)
             function preview(){
-                currentImg.textContent = newIndex + 1; //passing current img index to currentImg varible with adding +1
+                currentImg.textContent = newIndex + 1; //passing current img index to currentImg variable with adding +1
                 let imageURL = gallery[newIndex].querySelector("img").src; //getting user clicked img url
                 previewImg.src = imageURL; //passing user clicked img url in previewImg src
             }
-            preview(); //calling above function
+            preview(); //calling the above function
     
             const prevBtn = document.querySelector(".prev");
             const nextBtn = document.querySelector(".next");
@@ -379,7 +379,7 @@ window.onload = ()=>{
             previewBox.classList.add("show"); 
             shadow.style.display = "block"; 
             closeIcon.onclick = ()=>{
-                newIndex = clickedImgIndex; //assigning user first clicked img index to newIndex
+                newIndex = clickedImgIndex; //assigning the user's first clicked img index to newIndex
                 prevBtn.style.display = "block"; 
                 nextBtn.style.display = "block";
                 previewBox.classList.remove("show");
@@ -390,8 +390,8 @@ window.onload = ()=>{
         
     } 
 }
+</script>
 
-  </script>
   <script>
     $(document).ready(function(){
       $('.btn').click(function(){
