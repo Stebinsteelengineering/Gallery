@@ -264,8 +264,11 @@ nav ul li.btn.hide i:before{
     width: 100%;
     display: none;
   }
-  nav ul li.items.show{
+  nav ul.show li.items{
     display: block;
+    background-color: #000000;
+  }
+    nav ul.show li.items.show {
     background-color: #000000;
   }
   nav ul li.btn{
@@ -401,18 +404,14 @@ window.onload = ()=>{
     };
 </script>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const toggleBtn = document.querySelector(".btn");
-        const itemsList = document.querySelector(".items");
+  document.addEventListener("DOMContentLoaded", function() {
+  const toggleBtn = document.querySelector(".btn");
+  const itemsList = document.querySelector("nav ul");
 
-        toggleBtn.addEventListener("click", function() {
-            itemsList.classList.toggle("show");
-            itemsList.classList.toggle("hide");
-        });
-    });
-</script>
-
+  toggleBtn.addEventListener("click", function() {
+    itemsList.classList.toggle("show");
+  });
+});
 
 </body>
 </html>
