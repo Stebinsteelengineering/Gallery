@@ -121,10 +121,17 @@ nav ul li.btn.hide i:before{
 .wrapper{
   max-width: 1500px;
 }
-.gallery{
+..gallery {
   display: flex;
   flex-wrap: wrap;
+  transition: margin-top 0.3s ease; /* Add transition for smooth shifting */
 }
+
+/* Add styles for when the menu is open */
+body.menu-open .gallery {
+  margin-top: 170px; /* Adjust as needed to account for logo and navigation height */
+}
+
 .gallery .image{
   padding: 7px;
   width: calc(100% / 3);
@@ -413,6 +420,7 @@ window.onload = ()=>{
 
   toggleBtn.addEventListener("click", function() {
     itemsList.classList.toggle("show");
+    document.body.classList.toggle("menu-open");
   });
 });
 </script>
