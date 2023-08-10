@@ -119,17 +119,22 @@ nav ul li.btn.hide i:before{
   content: '\f00d';
 }
 .wrapper{
-  max-width: 1500px;
+  max-width: 100%; /* Set to 100% to occupy the full width of the viewport */
+  padding: 0 20px; /* Add horizontal padding to create space on left and right */
+  box-sizing: border-box;
+
 }
-..gallery {
+.gallery {
   display: flex;
   flex-wrap: wrap;
-  transition: margin-top 0.3s ease; /* Add transition for smooth shifting */
+  justify-content: space-between; /* Distribute images evenly along the row */
+  margin-top: 86px; /* Same height as the navigation menu */
+  transition: margin-top 0.3s ease;
 }
 
 /* Add styles for when the menu is open */
 body.menu-open .gallery {
-  margin-top: 120px; /* Adjust as needed to account for logo and navigation height */
+  margin-top: 155px; /* Adjust as needed to account for logo and navigation height */
 }
 
 .gallery .image{
